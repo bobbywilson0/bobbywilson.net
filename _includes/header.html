@@ -1,0 +1,34 @@
+<header class="site-header">
+
+    <div class="wrapper">
+
+        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+        <nav class="site-nav">
+
+            <div class="trigger">
+                {% for page in site.pages %}
+                {% if page.title %}
+                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </nav>
+
+    </div>
+
+</header>
+
+<header>
+    <h1>Bobby Wilson</h1>
+    <aside>
+        <ul>
+            <li>
+                <a href="//github.com/bobbywilson0"><i class="fa fa-github"></i></a> /
+                <a href="//www.linkedin.com/in/bobbywilson0"><i class="fa fa-linkedin"></i></a> /
+                <a href="//twitter.com/bobbywilson0"><i class="fa fa-twitter"></i></a> bobbywilson0
+            </li>
+            <li><a href="mailto:bobbywilson0@gmail.com">bobbywilson0@gmail.com</a></li>
+        </ul>
+    </aside>
+</header>
